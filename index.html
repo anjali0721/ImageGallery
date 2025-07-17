@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filtered Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="gallery-container">
+    <h1>Filtered Image Gallery</h1>
+   
+
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="nature">Nature</button>
+  <button class="filter-btn" data-filter="beach">Beach</button>
+  <button class="filter-btn" data-filter="mountain">Mountain</button>
+  <button class="filter-btn" data-filter="city">City</button>
+</div>
+
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <!--  Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Green Forest" />
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=800&q=80" alt="Waterfall" />
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Nature Walk" />
+      </div>
+
+      <!--  Beach -->
+      <div class="gallery-item" data-category="beach">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach Sunset" />
+      </div>
+      <div class="gallery-item" data-category="beach">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach Path" />
+  <div class="caption"></div>
+</div>
+
+
+
+      <div class="gallery-item" data-category="beach">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80" alt="Ocean Shore" />
+      </div>
+
+      <!--  City -->
+      <div class="gallery-item" data-category="city">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80" alt="Skyscrapers" />
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="City at Night" />
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Urban Street" />
+      </div>
+
+      <!-- Mountain -->
+      <div class="gallery-item" data-category="mountain">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Snowy Mountains" />
+      </div>
+      <div class="gallery-item" data-category="mountain">
+        <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=800&q=80" alt="Mountain Trail" />
+      </div>
+      <div class="gallery-item" data-category="mountain">
+        <img src="https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80" alt="Rocky Mountains" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeBtn">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Preview" />
+    <button class="nav-btn" id="prevBtn">&#10094;</button>
+    <button class="nav-btn" id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
